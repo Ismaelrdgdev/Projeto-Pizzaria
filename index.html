@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria</title>
+</head>
+
+<body class="relative bg-gray-200">
+    <header class=" flex items-center justify-center h-30 md:h-50 w-full bg-red-500">
+        <h1 class="text-white md:text-6xl">Pizzaria do Ismael</h1>
+    </header>
+
+    <nav class="flex justify-center md:text-xl w-full h-8 bg-gray-300 items-center">
+        <div class="flex justify-around items-center text-sm md:w-200 w-full">
+
+            <ul>
+                <a class="hover:text-white" href="">Inicio<a>
+            </ul>
+
+            <ul>
+                <a class="hover:text-white" href="">Pizzas</a>
+            </ul>
+
+            <ul>
+                <a class="hover:text-white" href="">Bebidas</a>
+
+            </ul>
+                    
+            <ul>
+                 <a class="hover:text-white" href="">Fale Conosco</a>
+            </ul>
+
+            <ul>
+                <button class="cursor-pointer" id="btn-abrir" onclick="abrirCarrinho()">
+                    <img width="30" src="https://img.icons8.com/doodle-line/60/shopping-cart.png" alt="shopping-cart"/>
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <article>
+        <h1 class="flex justify-center text-4xl m-2 borda-inferior shadow-lg">Pizzas</h1>
+        <section class="flex justify-center">
+            <!--Criação do tamplete Grid com 3 colunas-->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6" >
+                <!--Criação do card-->
+                <div class="w-80 m-2 flex " id="template">
+                <div class="w-60">
+                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2">
+                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
+                    <p class="text-green-500 text-xl">R$ 35,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400" data-name="Pizza de calabresa" data-price="35.99">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex">
+                <div class="w-60">
+                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2">
+                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
+                    <p class="text-green-500 text-xl">R$ 35,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex">
+                <div class="w-60">
+                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2">
+                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
+                    <p class="text-green-500 text-xl">R$ 35,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex">
+                <div class="w-60">
+                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2">
+                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
+                    <p class="text-green-500 text-xl">R$ 35,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+
+        <!--Seção das bebidas-->
+        <h1 class="flex justify-center text-4xl m-2 borda-inferior shadow-lg">Bebidas</h1>
+        <section class="flex justify-center">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6">
+                <!--Criação do card-->
+                <div class="w-80 m-2 flex">
+                <div class="bg-bebidas">
+                    <img src="imagens/coca-lata.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2 flex flex-col justify-around">
+                    <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
+                    <p class="text-green-500 text-xl">R$ 4,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex">
+                <div class=" bg-bebidas p-2">
+                    <img src="imagens/fanta-laranja-lata-350ml.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2 flex flex-col justify-around">
+                    <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
+                    <p class="text-green-500 text-xl">R$ 4,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex">
+                <div class=" bg-bebidas">
+                    <img src="imagens/coca-lata.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2 flex flex-col justify-around">
+                    <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
+                    <p class="text-green-500 text-xl">R$ 4,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="w-80 m-2 flex ">
+                <div class=" bg-bebidas">
+                    <img src="imagens/coca-lata.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                </div>
+                <div class="m-2 flex flex-col justify-around">
+                    <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
+                    <p class="text-green-500 text-xl">R$ 4,99</p>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                </div>
+            </div>
+
+        </section>
+    </article>
+
+
+    <!--Criação do carrinho-->
+
+        <div class="absolute w-full md:w-90 min-h-200 top-0 right-0 z-50 bg-gray-400 rounded-lg hidden " id="card-carrinho" >
+            <div class="flex justify-around items-center borda-inferior shadow-lg bg-gray-300">
+                <h1 class=" font-sans text-4xl md:text-3xl">Carrinho</h1>
+                <button class="cursor-pointer" id="btn-fechar" onclick="fecharCarrinho()">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/close-window.png" alt="close-window"/>
+                </button>
+            </div>
+
+            
+            <div class="w-full h-full ">
+                <div class="flex flex-col justify-center items-center m-5">
+                <!--Itens carrinho-->
+
+                <div class="flex w-full justify-around items-center bg-gray-300 rounded-lg m-5">
+                    <div>
+                        <img src="imagens/pizza-calabresa.jpg" width="70px" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-sm">Pizza de calabresa</h1>
+                        <p class="text-green-500">R$ 35,99</p>
+                        <div class="flex gap-2 m-2">
+                            <button class="w-6 cursor-pointer" id="btn-down" onclick="decrementarItens()">
+                                <img width="48" height="48" src="https://img.icons8.com/color/48/minus.png" alt="minus"/>
+                            </button>
+
+                            <input class=" text-center w-10 justify-center bg-white border-1 border-black rounded-lg" id="visorQtd" value="0" disabled></input>
+
+                            <button class="w-6 cursor-pointer" id="btn-up" onclick="incrementarItens()">
+                                <img width="48" height="48" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1"/>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Fim itens carrinho-->
+                </div>
+
+                <div class="flex justify-center gap-6 borda2">
+                    <p>Total:</p>
+                    <p> R$ 0.00</p>
+                </div>
+                
+                <div class="rounded-lg flex justify-center bg-violet-500 text-white w-full absolute bottom-0 h-8 ">
+                    <button class="">Fazer Pedido</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Fim Criação do carrinho-->
+
+
+        <div id="visor">
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
