@@ -15,40 +15,30 @@
     </header>
 
     <nav class="flex justify-center md:text-xl w-full h-8 bg-gray-300 items-center">
-        <div class="flex justify-around items-center text-sm md:w-200 w-full">
+        <div class="flex justify-center gap-20  items-center text-sm w-full">
 
-            <ul>
                 <a class="hover:text-white" href="">Inicio<a>
-            </ul>
-
-            <ul>
+           
                 <a class="hover:text-white" href="">Pizzas</a>
-            </ul>
-
-            <ul>
+           
                 <a class="hover:text-white" href="">Bebidas</a>
 
-            </ul>
-                    
-            <ul>
                  <a class="hover:text-white" href="">Fale Conosco</a>
-            </ul>
-
-            <ul>
+        
                 <button class="cursor-pointer" id="btn-abrir" onclick="abrirCarrinho()">
                     <img width="30" src="https://img.icons8.com/doodle-line/60/shopping-cart.png" alt="shopping-cart"/>
                 </button>
-            </ul>
+           
         </div>
     </nav>
 
     <article>
-        <h1 class="flex justify-center text-4xl m-2 borda-inferior shadow-lg">Pizzas</h1>
+        <h1 class="flex justify-center text-4xl m-2 p-2 borda-inferior shadow-lg">Pizzas</h1>
         <section class="flex justify-center">
             <!--Criação do tamplete Grid com 3 colunas-->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6" >
                 <!--Criação do card-->
-                <div class="w-80 m-2 flex " id="template">
+                <div class="w-80 m-2 p-2 flex">
                 <div class="w-60">
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
@@ -56,11 +46,11 @@
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400" data-name="Pizza de calabresa" data-price="35.99">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg" data-name="Pizza de calabresa" data-price="35.99">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 flex">
+            <div class="w-80 m-2 p-2 flex">
                 <div class="w-60">
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
@@ -68,11 +58,11 @@
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 flex">
+            <div class="w-80 m-2 p-2 flex">
                 <div class="w-60">
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
@@ -80,11 +70,11 @@
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 flex">
+            <div class="w-80 m-2 p-2 flex">
                 <div class="w-60">
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
@@ -92,7 +82,7 @@
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
             
@@ -100,40 +90,40 @@
         </section>
 
         <!--Seção das bebidas-->
-        <h1 class="flex justify-center text-4xl m-2 borda-inferior shadow-lg">Bebidas</h1>
+        <h1 class="flex justify-center text-4xl m-2 p-2 borda-inferior shadow-lg">Bebidas</h1>
         <section class="flex justify-center">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6">
                 <!--Criação do card-->
-                <div class="w-80 m-2 flex">
+                <div class="w-80 m-2 p-2 flex">
                 <div class="bg-bebidas">
                     <img src="imagens/coca-lata.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 flex">
+            <div class="w-80 m-2 p-2 flex">
                 <div class=" bg-bebidas p-2">
                     <img src="imagens/fanta-laranja-lata-350ml.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 flex">
+            <div class="w-80 m-2 p-2 flex">
                 <div class=" bg-bebidas">
                     <img src="imagens/coca-lata.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
@@ -144,7 +134,7 @@
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
                 </div>
             </div>
 
