@@ -1,4 +1,10 @@
 
+
+header{
+    background-image: url(./imagens/teste.jpg);
+    object-fit: contain;
+    background-position: center;
+}
 .borda-inferior{
     border-bottom: 2px solid gray
 }
@@ -39,3 +45,4 @@
 .borda3{
     border: 1px solid blue;
 }
+

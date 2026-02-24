@@ -15,7 +15,7 @@
     </header>
 
     <nav class="flex justify-center md:text-xl w-full h-8 bg-gray-300 items-center">
-        <div class="flex justify-center gap-20  items-center text-sm w-full">
+        <div class="flex justify-center md:gap-20 gap-4  items-center text-sm ">
 
                 <a class="hover:text-white" href="">Inicio<a>
            
@@ -25,7 +25,7 @@
 
                  <a class="hover:text-white" href="">Fale Conosco</a>
         
-                <button class="cursor-pointer" id="btn-abrir" onclick="abrirCarrinho()">
+                <button class="cursor-pointer" id="btn-abrir">
                     <img width="30" src="https://img.icons8.com/doodle-line/60/shopping-cart.png" alt="shopping-cart"/>
                 </button>
            
@@ -36,57 +36,63 @@
         <h1 class="flex justify-center text-4xl m-2 p-2 borda-inferior shadow-lg">Pizzas</h1>
         <section class="flex justify-center">
             <!--Criação do tamplete Grid com 3 colunas-->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6" >
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6"  >
                 <!--Criação do card-->
-                <div class="w-80 m-2 p-2 flex">
-                <div class="w-60">
+                <div class="w-80 m-2 p-2 flex" id="catalogo" >
+                <div class="w-60" >
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2">
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg" data-name="Pizza de calabresa" data-price="35.99">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Pizza de calabresa" data-preco="35.99">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 p-2 flex">
-                <div class="w-60">
-                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+            <div class="w-80 m-2 p-2 flex" id="catalogo" >
+                <div class="w-60" >
+                    <img src="imagens/pizza-4952508_1280.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2">
-                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <h1 class="text-lg font-sans">Pizza de Queijo</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Pizza de Queijo" data-preco="35.99">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 p-2 flex">
-                <div class="w-60">
+            <div class="w-80 m-2 p-2 flex" id="catalogo" >
+                <div class="w-60" >
                     <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2">
                     <h1 class="text-lg font-sans">Pizza de calabresa</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="calabresa" data-preco="35.99">Adicionar</button>
                 </div>
             </div>
 
-            <div class="w-80 m-2 p-2 flex">
-                <div class="w-60">
-                    <img src="imagens/pizza-calabresa.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+            <div class="w-80 m-2 p-2 flex" id="catalogo" >
+                <div class="w-60" >
+                    <img src="imagens/pizza-4952508_1280.jpg" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
                 </div>
                 <div class="m-2">
-                    <h1 class="text-lg font-sans">Pizza de calabresa</h1>
+                    <h1 class="text-lg font-sans">Pizza de Queijo</h1>
                     <p class="text-xs text-gray-500"><strong>Igredientes:</strong> Massa, molho de tomate, calabresa e cebola</p>
                     <p class="text-green-500 text-xl">R$ 35,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Queijo" data-preco="35.99">Adicionar</button>
                 </div>
             </div>
+            </div>
+
+            </div>
+
             
-            </div>
+
+
+
         </section>
 
         <!--Seção das bebidas-->
@@ -101,19 +107,19 @@
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Coca-Cola 350ml" data-preco="4.99">Adicionar</button>
                 </div>
             </div>
 
             <div class="w-80 m-2 p-2 flex">
                 <div class=" bg-bebidas p-2">
-                    <img src="imagens/fanta-laranja-lata-350ml.png" class="rounded-4xl hover:md:scale-105 duration-400" alt="">
+                    <img src="imagens/fanta-laranja-lata-350ml.png" class="rounded-4xl hover:md:scale-105 duration-400 produto-img" alt="">
                 </div>
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
-                </div>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Coca-Cola 450ml" data-preco="4.99">Adicionar</button>
+                </div> 
             </div>
 
             <div class="w-80 m-2 p-2 flex">
@@ -123,7 +129,7 @@
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Coca-Cola 550ml" data-preco="4.99">Adicionar</button>
                 </div>
             </div>
 
@@ -134,7 +140,7 @@
                 <div class="m-2 flex flex-col justify-around">
                     <h1 class="text-lg font-sans">Coca-Cola 350ml</h1>
                     <p class="text-green-500 text-xl">R$ 4,99</p>
-                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg">Adicionar</button>
+                    <button class="text-white bg-blue-500 p-1 w-full hover:md:bg-blue-400 hover:md:scale-105 duration-400 rounded-lg produto-btn" data-nome="Coca-Cola 650ml" data-preco="4.99">Adicionar</button>
                 </div>
             </div>
 
@@ -144,54 +150,34 @@
 
     <!--Criação do carrinho-->
 
-        <div class="absolute w-full md:w-90 min-h-200 top-0 right-0 z-50 bg-gray-400 rounded-lg hidden " id="card-carrinho" >
-            <div class="flex justify-around items-center borda-inferior shadow-lg bg-gray-300">
-                <h1 class=" font-sans text-4xl md:text-3xl">Carrinho</h1>
-                <button class="cursor-pointer" id="btn-fechar" onclick="fecharCarrinho()">
-                    <img width="48" height="48" src="https://img.icons8.com/color/48/close-window.png" alt="close-window"/>
+        <div class=" bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden overflow-y-scroll items-center justify-center " id="cart-modal">
+
+        <div class=" flex flex-col justify-between min-h-100 min-w-[90%] md:min-w-[400px] bg-black rounded-lg " id="carrinhoAberto">
+
+            <div class="flex justify-around m-2 p-2 bg-gray-500 rounded-lg items-center" >
+                <h1 class="text-xl text-white">Carrinho</h1>
+                <button class="cursor-pointer" id="btn-fechar">
+                    <img width="30" src="https://img.icons8.com/color/48/close-window.png" alt="close-window"/>
                 </button>
             </div>
 
-            
-            <div class="w-full h-full ">
-                <div class="flex flex-col justify-center items-center m-5">
-                <!--Itens carrinho-->
-
-                <div class="flex w-full justify-around items-center bg-gray-300 rounded-lg m-5">
-                    <div>
-                        <img src="imagens/pizza-calabresa.jpg" width="70px" alt="">
-                    </div>
-                    <div>
-                        <h1 class="text-sm">Pizza de calabresa</h1>
-                        <p class="text-green-500">R$ 35,99</p>
-                        <div class="flex gap-2 m-2">
-                            <button class="w-6 cursor-pointer" id="btn-down" onclick="decrementarItens()">
-                                <img width="48" height="48" src="https://img.icons8.com/color/48/minus.png" alt="minus"/>
-                            </button>
-
-                            <input class=" text-center w-10 justify-center bg-white border-1 border-black rounded-lg" id="visorQtd" value="0" disabled></input>
-
-                            <button class="w-6 cursor-pointer" id="btn-up" onclick="incrementarItens()">
-                                <img width="48" height="48" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1"/>
-                            </button>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Fim itens carrinho-->
-                </div>
-
-                <div class="flex justify-center gap-6 borda2">
-                    <p>Total:</p>
-                    <p> R$ 0.00</p>
-                </div>
-                
-                <div class="rounded-lg flex justify-center bg-violet-500 text-white w-full absolute bottom-0 h-8 ">
-                    <button class="">Fazer Pedido</button>
-                </div>
+            <div class="m-2 h-full " >
+                <div id="card-carrinho">
+                    
+                </div>      
             </div>
+
+            <div class="flex justify-center text-white gap-20">
+                <span>Total:</span>
+                <span id="total">R$ 0,00</span>
+            </div>
+
+            <div class="flex justify-center items-center h-8 bg-red-500 m-4 rounded-lg text-lg text-white">
+                <button>Finalizar Compra</button>
+            </div>
+
         </div>
+    </div>
 
         <!--Fim Criação do carrinho-->
 

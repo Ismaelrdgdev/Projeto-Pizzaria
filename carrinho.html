@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" cartao">
+        <div class="flex flex-col justify-between w-100 h-100 bg-gray-600 rounded-lg">
+            <div class="flex justify-around m-2 p-2 bg-pink-500 rounded-lg " >
+                <h1>Carrinho</h1>
+                <p>X</p>
+            </div>
+
+            <div class="borda1 m-2 h-full" >
+                <div id="card-carrinho">
+                    
+                </div>      
+            </div>
+
+            <div class="flex justify-center gap-20">
+                <span>Total:</span>
+                <span>R$ 0,00</span>
+            </div>
+
+            <div class="flex justify-center items-center h-8 bg-red-500 m-4 rounded-lg text-lg text-white">
+                <button>Finalizar Compra</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="containerCarrinho">
+        <div class="w-100 h-100 justify-center " id="carrinhoAberto"  >
+            <div class="flex justify-around items-center borda-inferior shadow-lg bg-gray-300">
+                <h1 class=" font-sans text-4xl md:text-3xl">Carrinho</h1>
+                <button class="cursor-pointer" id="btn-fechar" onclick="fecharCarrinho()">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/close-window.png" alt="close-window"/>
+                </button>
+            </div>
+
+            
+            <div class="w-full h-full borda2" >
+                <div id="card-carrinho">
+                    
+                </div>      
+            </div>
+            <p id="total" class="borda1 absolute bottom-0 rigth-0 m-2 p-2" >R$ 0,00</p>
+        </div>
+
+        </div>
+</body>
+</html>
