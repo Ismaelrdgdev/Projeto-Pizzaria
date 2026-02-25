@@ -78,7 +78,7 @@ function atualizarCarrinho(){
     div.classList.add("item-carrinho")
     div.classList.add("m-2")
 
-    div.innerHTML = `<div class="w-full flex justify-around items-center bg-white rounded-lg h-20">
+    div.innerHTML = `<div class="w-full flex justify-between items-center bg-white rounded-lg h-20 p-2">
                         <span>${item.nome} (Qtd. ${item.quantidade})</span>
                         <strong class="text-green-500">R$ ${(item.preco * item.quantidade).toFixed(2).replace('.', ',')}</strong>
                         <button onclick="removerItem(${index})" class="flex">❌</button>
