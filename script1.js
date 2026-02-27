@@ -15,15 +15,7 @@ if(event.target === cartModal){
 // Abrir o modal do carrinho
 const botaoAbrirCarrinho = document.getElementById("btn-abrir");
 botaoAbrirCarrinho.addEventListener("click", function(){
-  if (carrinho == ''){
-    Swal.fire({
-  icon: "warning",
-  title: "O carrinho está vazio... <br> adicione produtos para ver!"
-});
-     
-  } else{
     cartModal.style.display = "flex"
-  }
   atualizarCarrinho();
     
 })

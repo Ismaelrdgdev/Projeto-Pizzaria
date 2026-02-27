@@ -1,0 +1,16 @@
+body{
+    min-height: 100vh;
+    background-color: #e6cdcd;
+}
+
+.borda1{
+    border: 1px solid pink;
+}
+
+.borda2{
+    border: 1px solid red;
+}
+
+.borda3{
+    border: 1px solid blue;
+}
