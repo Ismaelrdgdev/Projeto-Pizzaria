@@ -1,3 +1,15 @@
+.fonte {
+  font-family: "Bangers", system-ui;
+  font-style: normal;
+}
+
+
+
+
+.bg-home{
+    background-image: url(imagens/bg.png);
+}
+
 .borda-inferior{
     border-bottom: 2px solid gray
 }
@@ -38,4 +50,3 @@
 .borda3{
     border: 1px solid blue;
 }
-

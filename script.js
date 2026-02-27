@@ -1,6 +1,4 @@
 
-  
-
 //Fechar o modal com o botao FECHAR
 const botaoFecharCarrinho = document.getElementById("btn-fechar");
 botaoFecharCarrinho.addEventListener("click", function(){
@@ -18,7 +16,10 @@ if(event.target === cartModal){
 const botaoAbrirCarrinho = document.getElementById("btn-abrir");
 botaoAbrirCarrinho.addEventListener("click", function(){
   if (carrinho == ''){
-    alert("O carrinho está vazio, adicione produtos para ver...")
+    Swal.fire({
+  icon: "warning",
+  title: "O carrinho está vazio... <br> adicione produtos para ver!"
+});
      
   } else{
     cartModal.style.display = "flex"
@@ -81,8 +82,10 @@ function atualizarCarrinho(){
     div.innerHTML = `<div class="w-full flex justify-between items-center bg-white rounded-lg h-20 p-2">
                         <span>${item.nome} (Qtd. ${item.quantidade})</span>
                         <strong class="text-green-500">R$ ${(item.preco * item.quantidade).toFixed(2).replace('.', ',')}</strong>
-                        <button onclick="removerItem(${index})" class="flex">❌</button>
-                    </div>` ;
+                        <button onclick="removerItem(${index})" class="flex">❌</button> <br>
+                        
+                    </div>
+                    ` ;
 
       //adiciono ela no carrinho
       listaCarrinho.appendChild(div)
@@ -91,10 +94,60 @@ function atualizarCarrinho(){
   //retorno o valor total 
   totalProduto.textContent ="R$ " + total.toFixed(2).replace('.', ',')
   console.log(carrinho.length);
+  console.log(totalProduto.innerHTML)
 
 };
 
 function removerItem(index) {
   carrinho.splice(index, 1);
   atualizarCarrinho();
-}
+};
+
+//? RECUPERAR VALOR DO INPUT PARA RETIRAR ADICIONAIS
+
+let botaoFinalizar = document.getElementById("btn-finalizar");
+
+botaoFinalizar.onclick = (e) => {
+  e.preventDefault();
+
+  let retirar = document.getElementById("btn-retirar").value;
+
+  Swal.fire({
+    title: "Está tudo certo?",
+    text: "Seria bom dar uma revisada no carrinho antes!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    cancelButtonText: "Revisar",
+    confirmButtonText: "Sim, está correto"
+  }).then((result) => {
+
+    if (result.isConfirmed) {
+
+      const cartItems = carrinho.map((item) => {
+        return `Itens: ${item.nome}
+Quantidade: ${item.quantidade}
+Preço: R$${item.preco}`;
+      }).join("\n");
+
+      const total = totalProduto.innerText;
+
+      const message = encodeURIComponent(
+`${cartItems}
+
+Valor total do pedido: R$ ${total}
+Itens para retirar da pizza: ${retirar}`
+      );
+
+      const phone = "5521993308955";
+
+      window.open(
+        `https://wa.me/${phone}?text=${message}`,
+        "_blank"
+      );
+    }
+
+  });
+
+};
